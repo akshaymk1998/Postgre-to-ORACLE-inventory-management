@@ -1,0 +1,14 @@
+--GITHUB LOAD THE FILES TO REPOSITARY
+cd "D:/postgress py and table datasets/Postgre-to-ORACLE-inventory-management"
+git add .
+git commit -m "Initial commit with PostgreSQL to Oracle migration scripts"
+git config --global user.name "Akshay M Kalabaurgi"
+git config --global user.email "Akshaymkalbaurgi.com"
+git branch -M main
+git push -u origin main
+
+
+Verify
+git add .
+git commit -m "update scripts"
+git push
