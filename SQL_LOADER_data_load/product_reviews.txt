@@ -1,0 +1,10 @@
+LOAD DATA
+INFILE 'C:\Users\Aksha\Downloads\data_load\product_reviews.csv'
+INTO TABLE product_reviews
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+ product_name CHAR,
+ customer_name CHAR,
+ rating INTEGER EXTERNAL
+)

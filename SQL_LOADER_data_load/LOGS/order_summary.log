@@ -1,0 +1,134 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu May 28 21:01:14 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   C:\Users\aksha\Downloads\data_load\order_summary.txt
+Data File:      C:\Users\Aksha\Downloads\data_load\order_summary.csv
+  Bad File:     C:\Users\aksha\Downloads\data_load\order_summary.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table ORDER_SUMMARY, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ORDER_ID                            FIRST     *   ,  O(") CHARACTER            
+ORDER_DATE                           NEXT     *   ,  O(") CHARACTER            
+STATUS                               NEXT     *   ,  O(") CHARACTER            
+CUSTOMER_NAME                        NEXT     *   ,  O(") CHARACTER            
+PRODUCT_NAME                         NEXT     *   ,  O(") CHARACTER            
+CATEGORY_NAME                        NEXT     *   ,  O(") CHARACTER            
+SUPPLIER_NAME                        NEXT     *   ,  O(") CHARACTER            
+QUANTITY                             NEXT     *   ,  O(") CHARACTER            
+UNIT_PRICE                           NEXT     *   ,  O(") CHARACTER            
+LINE_TOTAL                           NEXT     *   ,  O(") CHARACTER            
+PAYMENT_AMOUNT                       NEXT     *   ,  O(") CHARACTER            
+PAYMENT_METHOD                       NEXT     *   ,  O(") CHARACTER            
+SHIPPED_DATE                         NEXT     *   ,  O(") CHARACTER            
+TRACKING_NUMBER                      NEXT     *   ,  O(") CHARACTER            
+RETURN_REASON                        NEXT     *   ,  O(") CHARACTER            
+
+
+Table ORDER_SUMMARY:
+  12429 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 967500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         12429
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu May 28 21:01:14 2026
+Run ended on Thu May 28 21:01:15 2026
+
+Elapsed time was:     00:00:01.27
+CPU time was:         00:00:00.11
+
+
+
+__________________________________________________________________________________________________________
+
+sqlldr userid=akshay/amk@//localhost:1521/orclpdb control="C:\Users\aksha\Downloads\data_load\order_summary.txt" log="C:\Users\aksha\Downloads\data_load\LOGS\order_summary.log"
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu May 28 21:01:14 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 250
+Commit point reached - logical record count 500
+Commit point reached - logical record count 750
+Commit point reached - logical record count 1000
+Commit point reached - logical record count 1250
+Commit point reached - logical record count 1500
+Commit point reached - logical record count 1750
+Commit point reached - logical record count 2000
+Commit point reached - logical record count 2250
+Commit point reached - logical record count 2500
+Commit point reached - logical record count 2750
+Commit point reached - logical record count 3000
+Commit point reached - logical record count 3250
+Commit point reached - logical record count 3500
+Commit point reached - logical record count 3750
+Commit point reached - logical record count 4000
+Commit point reached - logical record count 4250
+Commit point reached - logical record count 4500
+Commit point reached - logical record count 4750
+Commit point reached - logical record count 5000
+Commit point reached - logical record count 5250
+Commit point reached - logical record count 5500
+Commit point reached - logical record count 5750
+Commit point reached - logical record count 6000
+Commit point reached - logical record count 6250
+Commit point reached - logical record count 6500
+Commit point reached - logical record count 6750
+Commit point reached - logical record count 7000
+Commit point reached - logical record count 7250
+Commit point reached - logical record count 7500
+Commit point reached - logical record count 7750
+Commit point reached - logical record count 7794
+Commit point reached - logical record count 8044
+Commit point reached - logical record count 8294
+Commit point reached - logical record count 8544
+Commit point reached - logical record count 8794
+Commit point reached - logical record count 9044
+Commit point reached - logical record count 9294
+Commit point reached - logical record count 9544
+Commit point reached - logical record count 9794
+Commit point reached - logical record count 10044
+Commit point reached - logical record count 10294
+Commit point reached - logical record count 10544
+Commit point reached - logical record count 10794
+Commit point reached - logical record count 11044
+Commit point reached - logical record count 11294
+Commit point reached - logical record count 11544
+Commit point reached - logical record count 11794
+Commit point reached - logical record count 12044
+Commit point reached - logical record count 12294
+Commit point reached - logical record count 12429
+
+Table ORDER_SUMMARY:
+  12429 Rows successfully loaded.
+
+Check the log file:
+  C:\Users\aksha\Downloads\data_load\LOGS\order_summary.log
+for more information about the load.

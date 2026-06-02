@@ -1,0 +1,90 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu May 28 21:52:41 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   C:\Users\aksha\Downloads\data_load\product_reviews.txt
+Data File:      C:\Users\Aksha\Downloads\data_load\product_reviews.csv
+  Bad File:     C:\Users\aksha\Downloads\data_load\product_reviews.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table PRODUCT_REVIEWS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PRODUCT_NAME                        FIRST     *   ,  O(") CHARACTER            
+CUSTOMER_NAME                        NEXT     *   ,  O(") CHARACTER            
+RATING                               NEXT     *   ,  O(") CHARACTER            
+
+
+Table PRODUCT_REVIEWS:
+  5000 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 193500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          5000
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu May 28 21:52:41 2026
+Run ended on Thu May 28 21:52:42 2026
+
+Elapsed time was:     00:00:00.57
+CPU time was:         00:00:00.06
+
+
+
+PS C:\Users\aksha> sqlldr userid=akshay/amk@//localhost:1521/orclpdb control="C:\Users\aksha\Downloads\data_load\product_reviews.txt" log="C:\Users\aksha\Downloads\data_load\LOGS\product_reviews.log"
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu May 28 21:52:41 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Path used:      Conventional
+Commit point reached - logical record count 250
+Commit point reached - logical record count 500
+Commit point reached - logical record count 750
+Commit point reached - logical record count 1000
+Commit point reached - logical record count 1250
+Commit point reached - logical record count 1500
+Commit point reached - logical record count 1750
+Commit point reached - logical record count 2000
+Commit point reached - logical record count 2250
+Commit point reached - logical record count 2500
+Commit point reached - logical record count 2750
+Commit point reached - logical record count 3000
+Commit point reached - logical record count 3250
+Commit point reached - logical record count 3500
+Commit point reached - logical record count 3750
+Commit point reached - logical record count 4000
+Commit point reached - logical record count 4250
+Commit point reached - logical record count 4500
+Commit point reached - logical record count 4750
+Commit point reached - logical record count 5000
+
+Table PRODUCT_REVIEWS:
+  5000 Rows successfully loaded.
+
+Check the log file:
+  C:\Users\aksha\Downloads\data_load\LOGS\product_reviews.log
+for more information about the load.
+PS C:\Users\aksha>

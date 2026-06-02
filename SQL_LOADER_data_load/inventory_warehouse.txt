@@ -1,0 +1,12 @@
+LOAD DATA
+INFILE 'C:\Users\Aksha\Downloads\data_load\inventory_warehouse.csv'
+INTO TABLE inventory_warehouse
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+  warehouse_name CHAR,
+  location CHAR, 
+  product_name CHAR, 
+  category_name CHAR, 
+  stock_level INTEGER EXTERNAL
+ )

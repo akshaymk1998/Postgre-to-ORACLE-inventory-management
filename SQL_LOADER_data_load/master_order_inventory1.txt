@@ -1,0 +1,27 @@
+LOAD DATA
+INFILE 'C:\Users\Aksha\Downloads\master_order_inventory.csv'
+INTO TABLE master_order_inventory
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+  order_id        INTEGER EXTERNAL,
+  order_date      CHAR,
+  status          CHAR,
+  customer_name   CHAR,
+  customer_email  CHAR,
+  product_name    CHAR,
+  category_name   CHAR,
+  supplier_name   CHAR,
+  quantity        INTEGER EXTERNAL,
+  unit_price      DECIMAL EXTERNAL,
+  line_total      DECIMAL EXTERNAL,
+  payment_amount  DECIMAL EXTERNAL,
+  payment_method  CHAR,
+  shipped_date    CHAR,
+  tracking_number CHAR,
+  return_reason   CHAR,
+  return_date     CHAR,
+  warehouse_name  CHAR,
+  warehouse_location CHAR,
+  stock_level     INTEGER EXTERNAL
+)

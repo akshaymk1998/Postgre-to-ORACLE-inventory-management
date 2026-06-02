@@ -1,0 +1,22 @@
+LOAD DATA
+INFILE 'C:\Users\Aksha\Downloads\data_load\order_summary.csv'
+INTO TABLE order_summary
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+ order_id INTEGER EXTERNAL, 
+ order_date CHAR, 
+ status CHAR, 
+ customer_name CHAR,
+ product_name CHAR,
+ category_name CHAR,
+ supplier_name CHAR, 
+ quantity INTEGER EXTERNAL, 
+ unit_price INTEGER EXTERNAL,
+ line_total INTEGER EXTERNAL,
+ payment_amount INTEGER EXTERNAL,
+ payment_method CHAR, 
+ shipped_date CHAR , 
+ tracking_number INTEGER EXTERNAL ,
+ return_reason CHAR
+)

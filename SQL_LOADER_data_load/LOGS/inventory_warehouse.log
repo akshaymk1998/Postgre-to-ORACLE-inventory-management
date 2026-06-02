@@ -1,0 +1,33 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Thu May 28 20:55:17 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   C:\Users\aksha\Downloads\data_load\inventory_warehouse.txt
+Data File:      C:\Users\Aksha\Downloads\data_load\inventory_warehouse.csv
+  Bad File:     C:\Users\aksha\Downloads\data_load\inventory_warehouse.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table INVENTORY_WAREHOUSE, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+WAREHOUSE_NAME                      FIRST     *   ,  O(") CHARACTER            
+LOCATION                             NEXT     *   ,  O(") CHARACTER            
+PRODUCT_NAME                         NEXT     *   ,  O(") CHARACTER            
+CATEGORY_NAME                        NEXT     *   ,  O(") CHARACTER            
+STOCK_LEVEL                          NEXT     *   ,  O(") CHARACTER            
+
+SQL*Loader-601: For INSERT option, table must be empty.  Error on table INVENTORY_WAREHOUSE

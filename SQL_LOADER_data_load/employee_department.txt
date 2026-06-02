@@ -1,0 +1,13 @@
+LOAD DATA
+INFILE "C:\Users\aksha\Downloads\employee_department.csv"
+INTO TABLE employee_department
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+  employee_id INTEGER EXTERNAL ,
+  first_name 		CHAR,
+  last_name 		CHAR,
+  email 			CHAR,
+  department_name	CHAR,
+  region_name 		CHAR
+)
